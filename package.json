@@ -1,0 +1,58 @@
+{
+  "name": "react-oncoprint",
+  "main": "lib/index.js",
+  "version": "1.2.3",
+  "description": "A React component to create interactive OncoPrint charts.",
+  "scripts": {
+    "start": "webpack-serve ./webpack.serve.config.js --open",
+    "build-dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "build-storybook": "build-storybook",
+    "deploy-storybook": "storybook-to-ghpages",
+    "storybook": "start-storybook -p 6006",
+    "prepublish": "node_modules/@babel/cli/bin/babel.js src --out-dir lib"
+  },
+  "author": "Jack Luo",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "plotly.js": "^1.42.5",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-plotly.js": "^2.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.2.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.2.0",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-links": "^4.1.4",
+    "@storybook/addon-notes": "^4.1.4",
+    "@storybook/addons": "^4.1.4",
+    "@storybook/react": "^4.1.4",
+    "@storybook/storybook-deployer": "^2.8.1",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^2.1.0",
+    "eslint": "^5.11.1",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-react": "^7.9.1",
+    "html-tablify": "^2.0.2",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^3.1.2",
+    "webpack-serve": "^1.0.2"
+  },
+  "peerDependencies": {
+    "react": ">=0.14",
+    "react-dom": ">=0.14"
+  },
+  "engines": {
+    "node": ">=8.11.0",
+    "npm": ">=6.1.0"
+  }
+}
